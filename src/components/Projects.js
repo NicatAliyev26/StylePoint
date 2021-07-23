@@ -25,7 +25,6 @@ class Projects extends Component {
             currentImage: this.state.currentImage + 1
           });
 
-          console.log(this.setState.currentImage)
         } else {
           this.setState({
             currentImage: 0
