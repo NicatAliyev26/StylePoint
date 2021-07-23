@@ -17,12 +17,15 @@ class Projects extends Component {
           ]
         };
       }
-    
+       
+
       switchImage() {
         if (this.state.currentImage < this.state.images.length - 1) {
           this.setState({
             currentImage: this.state.currentImage + 1
           });
+
+          console.log(this.setState.currentImage)
         } else {
           this.setState({
             currentImage: 0
@@ -30,7 +33,7 @@ class Projects extends Component {
         }
         return this.currentImage;
       }
-    
+     
       componentDidMount() {
         setInterval(this.switchImage, 4000);
         new WOW.WOW().init();
